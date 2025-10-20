@@ -21,3 +21,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    padding-inline: 15px;
+}
+
+.navbar,
+.header .btn {display: none;}
+
+.header {
+    background-color: var(--white);
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding-block: 10px;
+    box-shadow: var(--shadow-1);
+    z-index: 4;
+}
+
+.header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.logo {
+    color: var(--rich-black-forga-29_1);
+    font-family: var(--ff-catamaran);
+    font-size: 3.5rem;
+    font-weight: var(--fw-900);
+    display: flex;
+    align-items: center;
+    margin-inline-start: -8px;
+}
